@@ -139,20 +139,24 @@ img {
 /* What is it */
 .what-is-it  h1 {
   position: relative;
+  text-align: center;
 }
 
 .what-is-it h1:after {
   content: '';
   position: absolute;
-  left: 24%;
+  left: 0;
+  right: 0;
   bottom: -0.5rem;
   background-color: var(--color-blue);
   height: 6px;
   width: 9rem;
+  margin: 0 auto;
 }
 
 .what-is-it p {
   font-size: 120%;
+  text-align: center;
 }
 
 /* Benefits List */
@@ -182,12 +186,15 @@ img {
 
 .how-to h2 {
   position: relative;
+  text-align: center;
 }
 
 .how-to h2:after {
   content: '';
   position: absolute;
-  left: 24%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   bottom: -0.5rem;
   background-color: var(--color-blue);
   height: 6px;
@@ -319,12 +326,6 @@ img {
   .hero {
     min-height: 28rem;
   }
-
-  .what-is-it h1:after,
-  .how-to h2:after {
-    left: 0;
-    width: 10rem;
-  }
   
   .benefits ul {
     flex-direction: row;
@@ -335,9 +336,9 @@ img {
     text-align: left;
   }
 
-  .how-to {
+  /* .how-to {
     text-align: left;
-  }
+  } */
 
   .footer nav a {
     padding: 0 1rem;
